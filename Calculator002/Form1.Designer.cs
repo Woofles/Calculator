@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -51,6 +52,7 @@
             this.buttonClearEvery = new System.Windows.Forms.Button();
             this.buttonClearBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,6 +189,7 @@
             this.buttonCalcMinus.Text = "-";
             this.buttonCalcMinus.UseVisualStyleBackColor = true;
             this.buttonCalcMinus.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCalcMinus_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonCalcMinus, "Performs substraction");
             // 
             // buttonCalcPlus
             // 
@@ -197,6 +200,7 @@
             this.buttonCalcPlus.Text = "+";
             this.buttonCalcPlus.UseVisualStyleBackColor = true;
             this.buttonCalcPlus.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCalcPlus_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonCalcPlus, "Performs addition");
             // 
             // buttonCalcStar
             // 
@@ -207,6 +211,7 @@
             this.buttonCalcStar.Text = "*";
             this.buttonCalcStar.UseVisualStyleBackColor = true;
             this.buttonCalcStar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCalcStar_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonCalcStar, "Performs multiplication");
             // 
             // buttonCalcSlash
             // 
@@ -217,6 +222,7 @@
             this.buttonCalcSlash.Text = "/";
             this.buttonCalcSlash.UseVisualStyleBackColor = true;
             this.buttonCalcSlash.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCalcSlash_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonCalcSlash, "Performs division");
             // 
             // buttonCalcEnter
             // 
@@ -227,6 +233,7 @@
             this.buttonCalcEnter.Text = "Enter";
             this.buttonCalcEnter.UseVisualStyleBackColor = true;
             this.buttonCalcEnter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonCalcEnter_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonCalcEnter, "Calculates the current expression.");
             // 
             // labelEqualSign
             // 
@@ -256,6 +263,7 @@
             this.buttonClearEvery.Text = "CE";
             this.buttonClearEvery.UseVisualStyleBackColor = true;
             this.buttonClearEvery.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonClearEvery_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonClearEvery, "Clears all fields & resets the operation field.");
             // 
             // buttonClearBack
             // 
@@ -266,6 +274,7 @@
             this.buttonClearBack.Text = "C";
             this.buttonClearBack.UseVisualStyleBackColor = true;
             this.buttonClearBack.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonClearBack_MouseClick);
+            this.toolTip1.SetToolTip(this.buttonClearBack, "Clears the last number entered.");
             // 
             // pictureBox1
             // 
@@ -275,6 +284,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(88, 119);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Copyright to Woofles\nWoof!");
             // 
             // Form1
             // 
@@ -339,6 +349,7 @@
         private System.Windows.Forms.Button buttonClearEvery;
         private System.Windows.Forms.Button buttonClearBack;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
